@@ -1,1 +1,0 @@
-C:\Users\davic\Desktop\SYSproject\David Gui\gui\David Gui\appV\Studio1ClientManagementSystem\Studio1ClientManagementSystem\Studio1ClientManagementSystem.csproj;x64

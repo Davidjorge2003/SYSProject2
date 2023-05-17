@@ -31484,11 +31484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davic\\Desktop\\New folder (2)\\Project\\GettingStarted\\GettingStarted.csproj",
+      "projectUniqueName": "C:\\Users\\davic\\Desktop\\aa\\Project\\GettingStarted\\GettingStarted.csproj",
       "projectName": "GettingStarted",
-      "projectPath": "C:\\Users\\davic\\Desktop\\New folder (2)\\Project\\GettingStarted\\GettingStarted.csproj",
+      "projectPath": "C:\\Users\\davic\\Desktop\\aa\\Project\\GettingStarted\\GettingStarted.csproj",
       "packagesPath": "C:\\Users\\davic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davic\\Desktop\\New folder (2)\\Project\\GettingStarted\\obj\\",
+      "outputPath": "C:\\Users\\davic\\Desktop\\aa\\Project\\GettingStarted\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

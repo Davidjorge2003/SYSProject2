@@ -8,9 +8,8 @@
     <ContentPage.BindingContext>
         <local:ClientViewModel x:Name="ViewModel"/>
     </ContentPage.BindingContext>
-    
-    <Grid>
 
+    <Grid>
         <!-- Add a frame for displaying customer data. -->
         <Frame Grid.Column="1"
                BackgroundColor="#F5F5F5"
@@ -32,10 +31,10 @@
         </Frame>
 
         <!-- Add a frame for displaying navigation buttons. -->
-        
+
 
         <!-- Add a frame for displaying customer data. -->
-       
+
         <Frame BackgroundColor="Transparent" BorderColor="Transparent"  >
             <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Clients}" AutoGenerateColumnsMode="None" 
                            GridLinesVisibility="Both" HeaderGridLinesVisibility="Both" SortingMode="Multiple" SelectionMode="Multiple" MaximumHeightRequest="00" MaximumWidthRequest="870" TranslationX="0" TranslationY="-22">
@@ -57,31 +56,24 @@
 
             </syncfusion:SfDataGrid>
         </Frame>
-       
-            <Grid>
-                <!-- Define the column widths for the grid -->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
-                </Grid.ColumnDefinitions>
-                <!-- StackLayout containing buttons and CollectionView -->
-                <StackLayout>
-                    <!-- Button to delete a user -->
-                    <Button Text="Delete Class" TextColor="White" BackgroundColor="#EF798A" WidthRequest="150" HeightRequest="50" TranslationX="400" TranslationY="550" CornerRadius="15" Clicked="ButtonRemoveClass"/>
-                    <!-- Button to add a user -->
-                <Button Text="Add Class" TextColor="White" BackgroundColor="#297373" WidthRequest="150" HeightRequest="50" TranslationX="700" TranslationY="500" CornerRadius="15"  Clicked="ButtonAddClassCliked"/>
-                    <!-- Button to import file -->
-                <Button Text="ImportFile" TextColor="White" BackgroundColor="#FFA400" WidthRequest="150" HeightRequest="50" TranslationX="1000" TranslationY="450" CornerRadius="15" Clicked="ButtonImportFileCliked"/>
-                    <!-- Button to search -->
-                    <Button Text="Search" TextColor="White" BackgroundColor="#B9B9B9" WidthRequest="200" HeightRequest="50" TranslationX="300" TranslationY="-50" CornerRadius="15"/>
 
-                    <!-- Here int this collectionView will be the grid for the data base -->
+        <Grid>
+            <!-- StackLayout containing buttons and CollectionView -->
+            <StackLayout>
+                <!-- Button to delete a user -->
+                <Button Text="Delete Class" TextColor="White" BackgroundColor="#EF798A" WidthRequest="150" HeightRequest="50" TranslationX="-300" TranslationY="550" CornerRadius="15" Clicked="ButtonRemoveClass"/>
+                <!-- Button to add a user -->
+                <Button Text="Add Class" TextColor="White" BackgroundColor="#297373" WidthRequest="150" HeightRequest="50" TranslationX="0" TranslationY="500" CornerRadius="15"  Clicked="ButtonAddClassCliked"/>
+                <!-- Button to import file -->
+                <Button Text="ImportFile" TextColor="White" BackgroundColor="#FFA400" WidthRequest="150" HeightRequest="50" TranslationX="300" TranslationY="450" CornerRadius="15" Clicked="ButtonImportFileCliked"/>
+                <!-- Button to save file -->
+                <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="0" TranslationY="470" CornerRadius="15" Clicked="ButtonSaveClasses"/>
+                <!-- Here int this collectionView will be the grid for the data base -->
 
-                </StackLayout>
+            </StackLayout>
 
-            </Grid>
-        <Frame 
+
+            <Frame 
            BackgroundColor="#564787"
             WidthRequest="70"  
             TranslationX="-520"
@@ -89,33 +81,35 @@
             HeightRequest="400"
            CornerRadius="37"
             Margin="10,100,-30,100">
-            <Grid>
+                <Grid>
 
-                <!-- Define the row heights for the grid inside the frame. -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="60" Grid.Row="1"/>
-                    <RowDefinition Height="60" Grid.Row="2"/>
-                    <RowDefinition Height="60" Grid.Row="3"/>
-                    <RowDefinition Height="60" Grid.Row="4"/>
-                    <RowDefinition Height="60" Grid.Row="5"/>
-                    <RowDefinition Height="60" Grid.Row="6"/>
-                    <RowDefinition Height="20"/>
-                </Grid.RowDefinitions>
+                    <!-- Define the row heights for the grid inside the frame. -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="60" Grid.Row="1"/>
+                        <RowDefinition Height="60" Grid.Row="2"/>
+                        <RowDefinition Height="60" Grid.Row="3"/>
+                        <RowDefinition Height="60" Grid.Row="4"/>
+                        <RowDefinition Height="60" Grid.Row="5"/>
+                        <RowDefinition Height="60" Grid.Row="6"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
 
-                <!-- Add image buttons for navigation. -->
-                <ImageButton Grid.Row="1" Source="home.png" Clicked="HomeImageButtonClick"  BackgroundColor="Transparent" Margin="12"/>
-                <ImageButton Grid.Row="2" Source="file.png" Clicked="CustomerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
-                <ImageButton Grid.Row="3" Source="notes.png" Clicked="NoteImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
-                <ImageButton Grid.Row="4" Source="share.png" Clicked="PeopleImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
-                <ImageButton Grid.Row="5" Source="timer.png" Clicked="TimerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
-                <ImageButton Grid.Row="6" Source="folderlock.png" Clicked="FolderLockImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
-            </Grid>
-        </Frame>
+                    <!-- Add image buttons for navigation. -->
+                    <ImageButton Grid.Row="1" Source="home.png" Clicked="HomeImageButtonClick"  BackgroundColor="Transparent" Margin="12"/>
+                    <ImageButton Grid.Row="2" Source="file.png" Clicked="CustomerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                    <ImageButton Grid.Row="3" Source="notes.png" Clicked="NoteImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                    <ImageButton Grid.Row="4" Source="share.png" Clicked="PeopleImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                    <ImageButton Grid.Row="5" Source="timer.png" Clicked="TimerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                    <ImageButton Grid.Row="6" Source="folderlock.png" Clicked="FolderLockImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                </Grid>
+            </Frame>
 
-        <Frame BackgroundColor="Transparent"  TranslationX="447" TranslationY="-270" MaximumHeightRequest="42" MaximumWidthRequest="42" CornerRadius="10" BorderColor="Black" />
-        <ImageButton Source="logout.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="446" TranslationY="-267" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+            <Frame BackgroundColor="Transparent"  TranslationX="447" TranslationY="-270" MaximumHeightRequest="42" MaximumWidthRequest="42" CornerRadius="10" BorderColor="Black" />
+            <ImageButton Source="logout.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="446" TranslationY="-267" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
 
-        <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="5" TranslationY="265" CornerRadius="15"/>
+
+            <SearchBar x:Name="searchBar" Placeholder="Enter first name.." TextChanged="searchBar_TextChanged" WidthRequest="900" HeightRequest="50" TranslationY="-250" TranslationX="-40"  TextColor="Black"/>
+        </Grid>
     </Grid>
 </ContentPage>

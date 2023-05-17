@@ -75,4 +75,24 @@ public partial class ClasesPage : ContentPage
             await _clientViewModel.SaveClientAsync(client);
         }
     }
+    private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        string enteredFirstName = e.NewTextValue;
+
+        //Search for the client with the entered first name
+        Client client = _clientViewModel.Clients.FirstOrDefault(c => c.firstName == enteredFirstName);
+
+        if (client != null)
+        {
+            //Highlight the row that corresponds to the found client
+            dataGrid.SelectedRow = client;
+        }
+        else
+        {
+            //If there is no match, deselect any currently selected item
+            dataGrid.SelectedRow = null;
+        }
+
+    }
+
 }

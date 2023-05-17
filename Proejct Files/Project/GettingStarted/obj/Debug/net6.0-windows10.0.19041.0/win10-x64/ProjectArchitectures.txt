@@ -1,1 +1,1 @@
-C:\Users\davic\Desktop\New folder (2)\Project\GettingStarted\GettingStarted.csproj;x64
+C:\Users\davic\Desktop\aa\Project\GettingStarted\GettingStarted.csproj;x64

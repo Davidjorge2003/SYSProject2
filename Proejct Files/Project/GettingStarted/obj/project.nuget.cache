@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dmoZvEGtCRkRqPGGhmQWVR6QuBUHekDnISbjKJpA5zNcahC0bA17albK4+R0yVbsbccqD9ygG40XCq09M1VMbA==",
+  "dgSpecHash": "zt3+60jEqCYPayl3rgF/kklRENrI3K8sJDT2va5CX6tzVwmkFUIJcWS23OZJUXSxg8zl1rEuJzf1PhOsK691Mg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davic\\Desktop\\New folder (2)\\Project\\GettingStarted\\GettingStarted.csproj",
+  "projectFilePath": "C:\\Users\\davic\\Desktop\\aa\\Project\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davic\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\davic\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

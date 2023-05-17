@@ -11,7 +11,6 @@
     </ContentPage.BindingContext>
 
     <Grid>
-
         <!-- Add a frame for displaying customer data. -->
         <Frame Grid.Column="1"
                BackgroundColor="#F5F5F5"
@@ -60,28 +59,21 @@
         </Frame>
 
         <Grid>
-            <!-- Define the column widths for the grid -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="10*"/>
-                <ColumnDefinition Width="10*"/>
-            </Grid.ColumnDefinitions>
             <!-- StackLayout containing buttons and CollectionView -->
             <StackLayout>
                 <!-- Button to delete a user -->
-                <Button Text="Delete Class" TextColor="White" BackgroundColor="#EF798A" WidthRequest="150" HeightRequest="50" TranslationX="400" TranslationY="550" CornerRadius="15" Clicked="ButtonDeleteCliked"/>
+                <Button Text="Delete Class" TextColor="White" BackgroundColor="#EF798A" WidthRequest="150" HeightRequest="50" TranslationX="-300" TranslationY="550" CornerRadius="15" Clicked="ButtonDeleteCliked"/>
                 <!-- Button to add a user -->
-                <Button Text="Add Class" TextColor="White" BackgroundColor="#297373" WidthRequest="150" HeightRequest="50" TranslationX="700" TranslationY="500" CornerRadius="15"  Clicked="ButtonAddUserCliked"/>
+                <Button Text="Add Class" TextColor="White" BackgroundColor="#297373" WidthRequest="150" HeightRequest="50" TranslationX="0" TranslationY="500" CornerRadius="15"  Clicked="ButtonAddUserCliked"/>
                 <!-- Button to import file -->
-                <Button Text="ImportFile" TextColor="White" BackgroundColor="#FFA400" WidthRequest="150" HeightRequest="50" TranslationX="1000" TranslationY="450" CornerRadius="15" Clicked="ButtonImportFileCliked"/>
-                <!-- Button to search -->
-                <Button Text="Search" TextColor="White" BackgroundColor="#B9B9B9" WidthRequest="200" HeightRequest="50" TranslationX="300" TranslationY="-50" CornerRadius="15"/>
-
+                <Button Text="ImportFile" TextColor="White" BackgroundColor="#FFA400" WidthRequest="150" HeightRequest="50" TranslationX="300" TranslationY="450" CornerRadius="15" Clicked="ButtonImportFileCliked"/>
+                <!-- Button to save file -->
+                <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="0" TranslationY="470" CornerRadius="15" Clicked="ButtonSaveCliked"/>
                 <!-- Here int this collectionView will be the grid for the data base -->
 
             </StackLayout>
 
-        </Grid>
+        
         <Frame 
            BackgroundColor="#564787"
             WidthRequest="70"  
@@ -117,6 +109,8 @@
         <Frame BackgroundColor="Transparent"  TranslationX="447" TranslationY="-270" MaximumHeightRequest="42" MaximumWidthRequest="42" CornerRadius="10" BorderColor="Black" />
         <ImageButton Source="logout.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="446" TranslationY="-267" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
 
-        <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="5" TranslationY="265" CornerRadius="15" Clicked="ButtonSaveCliked"/>
+        
+        <SearchBar x:Name="searchBar" Placeholder="Enter first name.." TextChanged="searchBar_TextChanged" WidthRequest="900" HeightRequest="50" TranslationY="-250" TranslationX="-40"  TextColor="Black"/>
+    </Grid>
     </Grid>
 </ContentPage>
