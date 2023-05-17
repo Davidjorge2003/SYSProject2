@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Studio1ClientManagementSystem.AddUserPage"
+             xmlns:B="clr-namespace:Studio1ClientManagementSystem.ViewModels"
+             BackgroundColor="#CCE5FF">
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <!-- Define the two column widths for the grid. -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Define the row height for the grid. -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+               BackgroundColor="#F5F5F5"
+               WidthRequest="1000"
+               BorderColor="Transparent"
+               HeightRequest="600"
+               VerticalOptions="Center"
+               HasShadow="False"
+               CornerRadius="20"
+               HorizontalOptions="Center">
+
+            <!-- Add a grid inside the frame. -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Frame>
+
+        <!-- Add a frame for displaying navigation buttons. -->
+
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+       BackgroundColor="#F5F5F5"
+       WidthRequest="900"
+       HeightRequest="500"
+       TranslationX="0"
+       TranslationY="-20"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+
+            <Grid>
+                <StackLayout>
+                    <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="2" BindableLayout.ItemsSource="{Binding People}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid x:Name="headerGrid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Text="Id" TextColor="Black" FontSize="19" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Grid.Column="1" Text="First Name" TextColor="Black" FontSize="19" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Grid.Column="2" Text="Last Name" TextColor="Black" FontSize="19" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Grid.Column="3" Text="Age" TextColor="Black" FontSize="19" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </Grid>
+
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,0,0,1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding Id}" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Column="1" Text="{Binding FirstName}" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Column="2" Text="{Binding LastName}" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Column="2" Text="{Binding Age}" Padding="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                 </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </Grid>
+                    </Grid>
+                </StackLayout>
+
+                </Grid>
+            
+        </Frame>
+        <!-- Button to save the canges-->
+        <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="583" TranslationY="265" CornerRadius="15"/>
+
+
+        <Frame BackgroundColor="Transparent"  TranslationX="1040" TranslationY="265" MaximumHeightRequest="42" MaximumWidthRequest="45" CornerRadius="10" BorderColor="Black" />
+        <ImageButton Source="arrowleft.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="1040" TranslationY="265" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+
+
+    </Grid>
+</ContentPage>

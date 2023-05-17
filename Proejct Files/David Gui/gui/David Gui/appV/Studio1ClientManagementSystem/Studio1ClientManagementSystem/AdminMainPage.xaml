@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             x:Class="Studio1ClientManagementSystem.AdminMainPage"
+             BackgroundColor="#CCE5FF">
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Define grid columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Define grid rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Create a frame with an embedded grid -->
+        <Frame Grid.Column="1"
+               BackgroundColor="#F5F5F5"
+               WidthRequest="1000"
+               HeightRequest="600"
+               VerticalOptions="Center"
+               BorderColor="Transparent"
+               HasShadow="False"
+               CornerRadius="20"
+               HorizontalOptions="Center">
+
+            <!-- Embed an image in the grid -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="gymlogo.png" BackgroundColor="Transparent" WidthRequest="200" HeightRequest="80" TranslationX="-150" TranslationY="-250"/>
+            </Grid>
+        </Frame>
+
+        <!-- Create another frame with an embedded grid -->
+        <Frame Grid.Column="2"
+               BackgroundColor="#F5F5F5"
+               WidthRequest="300"
+               HeightRequest="110"
+               TranslationX="320"
+               TranslationY="220"
+               CornerRadius="20">
+
+            <!-- Embed labels in the grid -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               x:Name="MyLabel"
+               Text="{Binding Source={x:Static System:DateTime.Now}, StringFormat='{0:t}'}"
+               FontSize="30"
+               FontAttributes="Bold"
+                TranslationX="80"
+                   TranslationY="0"
+               TextColor="Black"/>
+                <Label Grid.Column="1"
+                   x:Name="Mylabel2"
+                   Text="Logged in as: "
+                   FontSize="18"
+                   TranslationX="-80"
+                   TranslationY="50"
+                   TextColor="Black"/>
+                <Label Grid.Column="1"
+                    Text="Admin"
+                    x:Name="userLabel"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                   TranslationX="35"
+                   TranslationY="50"
+                   TextColor="Black"/>
+            </Grid>
+
+            <!-- Create a frame with icons for navigation -->
+        </Frame>
+        <Frame 
+           BackgroundColor="#564787"
+           Padding="3" 
+           CornerRadius="37"
+            Margin="10,100,-30,100">
+            <Grid>
+                <!-- Define each image row height-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="60" Grid.Row="1"/>
+                    <RowDefinition Height="60" Grid.Row="2"/>
+                    <RowDefinition Height="60" Grid.Row="3"/>
+                    <RowDefinition Height="60" Grid.Row="4"/>
+                    <RowDefinition Height="60" Grid.Row="5"/>
+                    <RowDefinition Height="60" Grid.Row="6"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <!-- Each ImageButton control represents a different feature of the application -->
+                <ImageButton Grid.Row="1" Source="home.png" Clicked="HomeImageButtonClick"  BackgroundColor="Transparent" Margin="12"/>
+                <ImageButton Grid.Row="2" Source="file.png" Clicked="CustomerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                <ImageButton Grid.Row="3" Source="notes.png" Clicked="NoteImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                <ImageButton Grid.Row="4" Source="share.png" Clicked="PeopleImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                <ImageButton Grid.Row="5" Source="timer.png" Clicked="TimerImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+                <ImageButton Grid.Row="6" Source="folderlock.png" Clicked="FolderLockImageButtonClick" BackgroundColor="Transparent" Margin="12"/>
+
+            </Grid>
+        </Frame>
+        <!-- First frame -->
+        <Frame Grid.Column="1"
+       BackgroundColor="#F5F5F5"
+       WidthRequest="600"
+       HeightRequest="350"
+       TranslationX="170"
+       TranslationY="-40"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- add here data base things -->
+                <StackLayout>
+                    <Label Text="add here data base things" TextColor="Black"/>
+                </StackLayout>
+
+            </Grid>
+            <!-- Frame for notes -->
+        </Frame>
+        <Frame Grid.Column="1"
+       BackgroundColor="#EF798A"
+       WidthRequest="300"
+       HeightRequest="200"
+       TranslationX="-300"
+       TranslationY="-90"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout>
+
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <!-- second frame for notes -->
+        <Frame Grid.Column="1"
+       BackgroundColor="#297373"
+       WidthRequest="300"
+       HeightRequest="200"
+       TranslationX="-300"
+       TranslationY="160"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout>
+
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <Frame BackgroundColor="Transparent"  TranslationX="960" TranslationY="-270" MaximumHeightRequest="42" MaximumWidthRequest="42" CornerRadius="10" BorderColor="Black" />
+        <ImageButton Source="logout.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="960" TranslationY="-267" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+
+
+    </Grid>
+
+</ContentPage>

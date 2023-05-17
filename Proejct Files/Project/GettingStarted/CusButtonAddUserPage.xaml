@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             x:Class="GettingStarted.CusButtonAddUserPage"
+             BackgroundColor="#CCE5FF">
+    
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <!-- Define the two column widths for the grid. -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Define the row height for the grid. -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+               BackgroundColor="#F5F5F5"
+               WidthRequest="1000"
+               BorderColor="Transparent"
+               HeightRequest="600"
+               VerticalOptions="Center"
+               HasShadow="False"
+               CornerRadius="20"
+               HorizontalOptions="Center">
+
+            <!-- Add a grid inside the frame. -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Frame>
+
+        <!-- Add a frame for displaying navigation buttons. -->
+
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+       BackgroundColor="#F5F5F5"
+       WidthRequest="900"
+       HeightRequest="500"
+       TranslationX="0"
+       TranslationY="-20"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+
+            <Grid>
+                <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Clients}" AutoGenerateColumnsMode="None"
+                           GridLinesVisibility="Both" HeaderGridLinesVisibility="Both" SortingMode="Multiple" SelectionMode="Multiple"
+                           Grid.Row="1" Grid.ColumnSpan="3">
+                    <syncfusion:SfDataGrid.Columns>
+                        <syncfusion:DataGridTextColumn MappingName="clientId" HeaderText="Client Id" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="firstName" HeaderText="First Name" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="lastName" HeaderText="Last Name" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="address" HeaderText="Address" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="city" HeaderText="City" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="postalCode" HeaderText="Postal Code" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="telephoneNumber" HeaderText="Telephone Number" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridDateColumn Format="dd MMM yyyy" MappingName="dateOfBirth" HeaderText="Date Of Birth" ColumnWidthMode="FitByHeader"></syncfusion:DataGridDateColumn>
+                        <syncfusion:DataGridDateColumn Format="dd MMM yyyy" MappingName="membershipCreationDate" HeaderText="Joined On:" ColumnWidthMode="FitByHeader"></syncfusion:DataGridDateColumn>
+                        <syncfusion:DataGridDateColumn Format="dd MMM yyyy" MappingName="membershipExpirationDate" HeaderText="Expires On:" ColumnWidthMode="FitByHeader"></syncfusion:DataGridDateColumn>
+                        <syncfusion:DataGridTextColumn MappingName="fitnessGoals" HeaderText="Fitness Goals" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+                        <syncfusion:DataGridTextColumn MappingName="membershipStatus" HeaderText="Membership Status" ColumnWidthMode="FitByHeader"></syncfusion:DataGridTextColumn>
+
+                    </syncfusion:SfDataGrid.Columns>
+
+                </syncfusion:SfDataGrid>
+
+            </Grid>
+
+        </Frame>
+        <!-- Button to save the canges-->
+        <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="583" TranslationY="265" CornerRadius="15"/>
+
+
+        <Frame BackgroundColor="Transparent"  TranslationX="1040" TranslationY="265" MaximumHeightRequest="42" MaximumWidthRequest="45" CornerRadius="10" BorderColor="Black" />
+        <ImageButton Source="arrowleft.png"  Clicked="LogOutImageButtonClick"  BackgroundColor="Transparent" TranslationX="1040" TranslationY="265" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+
+
+    </Grid>
+</ContentPage>

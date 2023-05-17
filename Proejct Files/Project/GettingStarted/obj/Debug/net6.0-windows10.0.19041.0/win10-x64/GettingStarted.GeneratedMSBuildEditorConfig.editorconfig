@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GettingStarted
+build_property.ProjectDir = C:\Users\davic\Desktop\aa\Project\GettingStarted\
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/AdminMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.AdminMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminMainPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/ClasesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.ClasesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ClasesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ClasesPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/CusButtonAddUserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.CusButtonAddUserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CusButtonAddUserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CusButtonAddUserPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/CusButtonImportFilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.CusButtonImportFilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = CusButtonImportFilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = CusButtonImportFilePage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/EmployeeMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.EmployeeMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EmployeeMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EmployeeMainPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/FileCustomerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.FileCustomerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = FileCustomerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = FileCustomerPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/LockBuImportFile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.LockBuImportFile.xaml
+build_metadata.AdditionalFiles.TargetPath = LockBuImportFile.xaml
+build_metadata.AdditionalFiles.RelativePath = LockBuImportFile.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/LockFIleMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.LockFIleMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LockFIleMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LockFIleMainPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/NoteMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.NoteMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = NoteMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = NoteMainPage.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/PeButtonImportFile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.PeButtonImportFile.xaml
+build_metadata.AdditionalFiles.TargetPath = PeButtonImportFile.xaml
+build_metadata.AdditionalFiles.RelativePath = PeButtonImportFile.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/davic/Desktop/aa/Project/GettingStarted/TimeMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GettingStarted.TimeMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TimeMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TimeMainPage.xaml

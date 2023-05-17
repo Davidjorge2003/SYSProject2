@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Studio1ClientManagementSystem
+build_property.ProjectDir = C:\Users\davic\Desktop\SYSproject\David Gui\gui\David Gui\appV\Studio1ClientManagementSystem\Studio1ClientManagementSystem\
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/AdminMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.AdminMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminMainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/CusButtonAddUserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.CusButtonAddUserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CusButtonAddUserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CusButtonAddUserPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/CusButtonImportFilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.CusButtonImportFilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = CusButtonImportFilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = CusButtonImportFilePage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/EmployeeMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.EmployeeMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EmployeeMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EmployeeMainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/FileCustomerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.FileCustomerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = FileCustomerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = FileCustomerPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/LockBuImportFile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.LockBuImportFile.xaml
+build_metadata.AdditionalFiles.TargetPath = LockBuImportFile.xaml
+build_metadata.AdditionalFiles.RelativePath = LockBuImportFile.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/LockFIleMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.LockFIleMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LockFIleMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LockFIleMainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/NoteMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.NoteMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = NoteMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = NoteMainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/PeButtonImportFile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.PeButtonImportFile.xaml
+build_metadata.AdditionalFiles.TargetPath = PeButtonImportFile.xaml
+build_metadata.AdditionalFiles.RelativePath = PeButtonImportFile.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/TimeMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.TimeMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TimeMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TimeMainPage.xaml
+
+[C:/Users/davic/Desktop/SYSproject/David Gui/gui/David Gui/appV/Studio1ClientManagementSystem/Studio1ClientManagementSystem/ViewModels/ClasesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Studio1ClientManagementSystem.ViewModels.ClasesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModels\ClasesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModels\ClasesPage.xaml

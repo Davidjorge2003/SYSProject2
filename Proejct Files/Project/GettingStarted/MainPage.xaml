@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:GettingStarted"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             x:Class="GettingStarted.MainPage"
+             BackgroundColor="#DBE8F4">
+
+
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Frame BackgroundColor="White"
+           WidthRequest="350">
+            <StackLayout Margin="20">
+                <Label Text="Login" FontSize="Large" TextColor="Black"
+               HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold"
+               Margin="0,30,40,20"/>
+
+
+                <StackLayout Margin="0,0,0,20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="icon.png" HeightRequest="20" WidthRequest="20" Margin="5,0" />
+                        <Entry Placeholder="Username" MaxLength="20" x:Name="UsernameEntry" FontSize="Medium" TextColor="Black" Grid.Column="1"/>
+                    </Grid>
+                    <BoxView BackgroundColor="Black" HeightRequest="2"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,0,0,20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="lock.png" HeightRequest="20" WidthRequest="20" Margin="5,0"/>
+                        <Entry Placeholder="Password" IsPassword="True" MaxLength="20" x:Name="PasswordEntry" Grid.Column="1" FontSize="Medium" TextColor="Black"/>
+                    </Grid>
+                    <BoxView BackgroundColor="Black" HeightRequest="2"/>
+                </StackLayout>
+
+                <Button Text="Login" Clicked="OnLoginButtonClicked" TextColor="White" BackgroundColor="Black"
+                Margin="0,30,40,20" FontSize="Medium" HeightRequest="50" WidthRequest="140"/>
+
+
+            </StackLayout>
+
+
+        </Frame>
+
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Studio1ClientManagementSystem.LockBuImportFile"
+             BackgroundColor="#CCE5FF">
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <!-- Define the two column widths for the grid. -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Define the row height for the grid. -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+               BackgroundColor="#F5F5F5"
+               WidthRequest="1000"
+               BorderColor="Transparent"
+               HeightRequest="600"
+               VerticalOptions="Center"
+               HasShadow="False"
+               CornerRadius="20"
+               HorizontalOptions="Center">
+
+            <!-- Add a grid inside the frame. -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Frame>
+
+        <!-- Add a frame for displaying navigation buttons. -->
+
+
+        <!-- Add a frame for displaying customer data. -->
+        <Frame Grid.Column="1"
+       BackgroundColor="#F5F5F5"
+       WidthRequest="900"
+       HeightRequest="500"
+       TranslationX="0"
+       TranslationY="-20"
+       HasShadow="False"
+       CornerRadius="20"
+       HorizontalOptions="Center">
+            <Grid>
+                <!-- Define the column widths for the grid -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <!-- StackLayout containing CollectionView -->
+                <StackLayout>
+                    <Label Text="add here data base things imp" TextColor="Black"/>
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+        <!-- Button to save the canges-->
+        <Button Text="Save" TextColor="White" BackgroundColor="#101935" WidthRequest="150" HeightRequest="50" TranslationX="583" TranslationY="265" CornerRadius="15"/>
+
+        <Frame BackgroundColor="Transparent"  TranslationX="1040" TranslationY="265" MaximumHeightRequest="42" MaximumWidthRequest="45" CornerRadius="10" BorderColor="Black" />
+        <ImageButton Source="arrowleft.png"  Clicked="BackImageButtonClick"  BackgroundColor="Transparent" TranslationX="1040" TranslationY="265" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+
+
+        <ImageButton Source="info.png" Clicked="InfoImageButtonClick"  BackgroundColor="Transparent" TranslationX="990" TranslationY="270" HeightRequest="29" WidthRequest="30" CornerRadius="10" BorderColor="Black"/>
+
+
+    </Grid>
+</ContentPage>
